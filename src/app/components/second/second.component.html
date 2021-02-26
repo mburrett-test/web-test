@@ -1,0 +1,12 @@
+<div id="app-second" class="box">
+  <h3>Second Component</h3>
+  <p>This is the second compoent.</p>
+  <img *ngIf="imgVisible" src="../../../favicon.ico" />
+  <p>
+    <button *ngIf="imgVisible" (click)="deleteImg()">Image Deleter</button>
+    <button *ngIf="!imgVisible" (click)="restoreImg()">Image Restorer</button>
+  </p>
+  <p>
+    <a class="link--home" routerLink="/">home</a>
+  </p>
+</div>
